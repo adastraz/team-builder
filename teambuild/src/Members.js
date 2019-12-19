@@ -9,6 +9,12 @@ const Members = props => {
                         <h2>{member.name}</h2>
                         <h2>{member.email}</h2>
                         <h2>{member.role}</h2>
+                        {/* <button 
+                            onClick={() => {
+                                props.editRow(user)
+                            }}>
+                            Edit
+                        </button> */}
                     </div>
                 ))
             }

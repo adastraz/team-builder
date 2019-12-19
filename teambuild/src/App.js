@@ -11,6 +11,10 @@ function App() {
       role : 'Web Developer'
     }
   ])
+  // const [editing, setEditing] = useState(false)
+  // const editRow = user => {
+    
+  // }
 
   const addNewMember = member => {
     const newMember = {
@@ -23,7 +27,10 @@ function App() {
   return (
     <div className="App">
       <Form addNewMember={addNewMember}/>
-      <Members teamMembers={teamMembers}/>
+      <Members 
+      teamMembers={teamMembers}
+      // editRow={editRow}
+      />
     </div>
   );
 }
